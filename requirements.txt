@@ -1,0 +1,18 @@
+# MkDocs 및 테마
+mkdocs
+mkdocs-material
+
+# 필수 플러그인
+mkdocs-minify-plugin
+pymdown-extensions
+
+# 추가 유용한 플러그인
+mkdocs-git-revision-date-localized-plugin
+mkdocs-awesome-pages-plugin
+mkdocs-redirects
+
+# 검색 및 다국어 지원
+mkdocs-static-i18n
+
+# 코드 하이라이팅
+Pygments

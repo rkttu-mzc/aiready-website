@@ -1,0 +1,6 @@
+title: AI 활용 가이드
+nav:
+  - effective-prompting.md
+  - code-generation.md
+  - debugging-with-ai.md
+  - documentation.md

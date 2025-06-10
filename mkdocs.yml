@@ -1,0 +1,97 @@
+site_name: CTU Gen AI 활용 가이드
+site_description: Cloud Tech Unit의 생성형 AI 효과적 활용을 위한 종합 가이드
+site_author: CTU Team
+site_url: https://aiready-website.github.io/aiready-website/
+
+# Repository
+repo_name: aiready-website/aiready-website
+repo_url: https://github.com/aiready-website/aiready-website
+
+# Copyright
+copyright: Copyright &copy; 2025 CTU (Cloud Tech Unit)
+
+# Configuration
+theme:
+  name: material
+  language: ko
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.select
+  icon:
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - search:
+      lang: ko
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Navigation is automatically generated from folder structure
+# You can customize order and titles using .pages files in each directory
